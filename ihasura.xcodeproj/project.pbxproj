@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4118D8BA2685A377006C5C4A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118D8B92685A377006C5C4A /* Utilities.swift */; };
+		4118D8BC2685A566006C5C4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4118D8BB2685A566006C5C4A /* GoogleService-Info.plist */; };
+		4118D8BE26870F57006C5C4A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118D8BD26870F57006C5C4A /* APIRequest.swift */; };
+		414B53DB268C41F9008D95D1 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B53DA268C41F8008D95D1 /* Query.swift */; };
+		414B53DD268C426C008D95D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B53DC268C426C008D95D1 /* Model.swift */; };
 		4181AE22267641D00095D52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181AE21267641D00095D52F /* AppDelegate.swift */; };
 		4181AE24267641D00095D52F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181AE23267641D00095D52F /* SceneDelegate.swift */; };
 		4181AE26267641D00095D52F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181AE25267641D00095D52F /* ViewController.swift */; };
 		4181AE29267641D00095D52F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4181AE27267641D00095D52F /* Main.storyboard */; };
 		4181AE2B267641D30095D52F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4181AE2A267641D30095D52F /* Assets.xcassets */; };
 		4181AE2E267641D30095D52F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4181AE2C267641D30095D52F /* LaunchScreen.storyboard */; };
+		E8717BFD5C3A07F0764E1DA3 /* Pods_ihasura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5761DA969058C329059CFF9 /* Pods_ihasura.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B59D048EB4C79EA9F84475D /* Pods-ihasura.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ihasura.release.xcconfig"; path = "Target Support Files/Pods-ihasura/Pods-ihasura.release.xcconfig"; sourceTree = "<group>"; };
+		4118D8B92685A377006C5C4A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4118D8BB2685A566006C5C4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4118D8BD26870F57006C5C4A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		414B53DA268C41F8008D95D1 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		414B53DC268C426C008D95D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4181AE1E267641D00095D52F /* ihasura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ihasura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4181AE21267641D00095D52F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4181AE23267641D00095D52F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		4181AE2A267641D30095D52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4181AE2D267641D30095D52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4181AE2F267641D30095D52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58899CCFD69C40D3BB08CD7 /* Pods-ihasura.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ihasura.debug.xcconfig"; path = "Target Support Files/Pods-ihasura/Pods-ihasura.debug.xcconfig"; sourceTree = "<group>"; };
+		C5761DA969058C329059CFF9 /* Pods_ihasura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ihasura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8717BFD5C3A07F0764E1DA3 /* Pods_ihasura.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				4181AE20267641D00095D52F /* ihasura */,
 				4181AE1F267641D00095D52F /* Products */,
+				F6C607B47F72D2349306B387 /* Pods */,
+				FBBC2FA1F6726562D991AB65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,37 @@
 		4181AE20267641D00095D52F /* ihasura */ = {
 			isa = PBXGroup;
 			children = (
+				4118D8BD26870F57006C5C4A /* APIRequest.swift */,
 				4181AE21267641D00095D52F /* AppDelegate.swift */,
 				4181AE23267641D00095D52F /* SceneDelegate.swift */,
 				4181AE25267641D00095D52F /* ViewController.swift */,
 				4181AE27267641D00095D52F /* Main.storyboard */,
+				4118D8BB2685A566006C5C4A /* GoogleService-Info.plist */,
 				4181AE2A267641D30095D52F /* Assets.xcassets */,
 				4181AE2C267641D30095D52F /* LaunchScreen.storyboard */,
 				4181AE2F267641D30095D52F /* Info.plist */,
+				4118D8B92685A377006C5C4A /* Utilities.swift */,
+				414B53DA268C41F8008D95D1 /* Query.swift */,
+				414B53DC268C426C008D95D1 /* Model.swift */,
 			);
 			path = ihasura;
+			sourceTree = "<group>";
+		};
+		F6C607B47F72D2349306B387 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B58899CCFD69C40D3BB08CD7 /* Pods-ihasura.debug.xcconfig */,
+				0B59D048EB4C79EA9F84475D /* Pods-ihasura.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FBBC2FA1F6726562D991AB65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5761DA969058C329059CFF9 /* Pods_ihasura.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4181AE32267641D30095D52F /* Build configuration list for PBXNativeTarget "ihasura" */;
 			buildPhases = (
+				EACB49C656632BFACAEEA48D /* [CP] Check Pods Manifest.lock */,
 				4181AE1A267641D00095D52F /* Sources */,
 				4181AE1B267641D00095D52F /* Frameworks */,
 				4181AE1C267641D00095D52F /* Resources */,
+				8C21B3DAF1C02284B635C5A8 /* [CP] Embed Pods Frameworks */,
+				569A05A72AE9B46387C982A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,18 +169,82 @@
 				4181AE2E267641D30095D52F /* LaunchScreen.storyboard in Resources */,
 				4181AE2B267641D30095D52F /* Assets.xcassets in Resources */,
 				4181AE29267641D00095D52F /* Main.storyboard in Resources */,
+				4118D8BC2685A566006C5C4A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		569A05A72AE9B46387C982A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ihasura/Pods-ihasura-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ihasura/Pods-ihasura-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ihasura/Pods-ihasura-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C21B3DAF1C02284B635C5A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ihasura/Pods-ihasura-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ihasura/Pods-ihasura-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ihasura/Pods-ihasura-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EACB49C656632BFACAEEA48D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ihasura-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4181AE1A267641D00095D52F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414B53DD268C426C008D95D1 /* Model.swift in Sources */,
 				4181AE26267641D00095D52F /* ViewController.swift in Sources */,
 				4181AE22267641D00095D52F /* AppDelegate.swift in Sources */,
+				4118D8BA2685A377006C5C4A /* Utilities.swift in Sources */,
+				4118D8BE26870F57006C5C4A /* APIRequest.swift in Sources */,
+				414B53DB268C41F9008D95D1 /* Query.swift in Sources */,
 				4181AE24267641D00095D52F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +389,7 @@
 		};
 		4181AE33267641D30095D52F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B58899CCFD69C40D3BB08CD7 /* Pods-ihasura.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +409,7 @@
 		};
 		4181AE34267641D30095D52F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B59D048EB4C79EA9F84475D /* Pods-ihasura.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
