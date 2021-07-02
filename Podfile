@@ -10,7 +10,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Messaging'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
-pod 'SVProgressHUD'
+pod 'NVActivityIndicatorView'
 pod 'Alamofire', '~> 5.0.0-rc.2'
 pod 'AlamofireObjectMapper'
 end

@@ -121,9 +121,11 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - ObjectMapper (3.5.3)
   - PromisesObjC (1.2.12)
-  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.2)
@@ -132,7 +134,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
   - GoogleSignIn
-  - SVProgressHUD
+  - NVActivityIndicatorView
 
 SPEC REPOS:
   trunk:
@@ -153,9 +155,9 @@ SPEC REPOS:
     - GTMAppAuth
     - GTMSessionFetcher
     - nanopb
+    - NVActivityIndicatorView
     - ObjectMapper
     - PromisesObjC
-    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
@@ -175,10 +177,10 @@ SPEC CHECKSUMS:
   GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 6d2027dbe31d98d9b0640d2c7659fb76b8082576
+PODFILE CHECKSUM: 7a8d26acc1cf19cc9963384a064d686984489d39
 
 COCOAPODS: 1.10.1

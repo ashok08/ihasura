@@ -8,10 +8,10 @@
 import UIKit
 import Firebase
 import GoogleSignIn
-import SVProgressHUD
+import NVActivityIndicatorView
 
 class ViewController: UIViewController {
-    
+    @IBOutlet weak var loader: NVActivityIndicatorView!
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var loggedIn: UILabel!
     @IBOutlet weak var userLbl: UILabel!
@@ -22,21 +22,24 @@ class ViewController: UIViewController {
         self.loggedIn.isHidden = true
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.delegate = self
+        self.loader.type = .ballRotateChase
     }
    
     func apiCall(token :String){
         let params = Query.shared.termsOfUse()
         APIRequest.shared.postRequest(token: token, params: params,ofType: Social.self,onSuccess: { (result) in
-            SVProgressHUD.dismiss()
+            self.loader.stopAnimating()
+            self.loader.isHidden = true
             if result.data.socialMedia.count > 0{
                 print(result.data.socialMedia.count)
                 self.loggedIn.isHidden = false
-                let socialMedia = (result.data.socialMedia.map{String($0.appName)}).joined(separator: ",")
+                let socialMedia = (result.data.socialMedia.map{String($0.appName)}).joined(separator: ", ")
                 guard let name = self.currentUser?.displayName else {return}
                 self.userLbl.text = """
                     Name : \(name)
                     
-                    Social Media : \(socialMedia)
+                    Social Media :
+                    \(socialMedia)
                     """
             }
         }) { (error) in
@@ -52,7 +55,7 @@ extension ViewController: GIDSignInDelegate{
         
     }
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        SVProgressHUD.show()
+        self.loader.startAnimating()
         if let error = error {
             if error.localizedDescription == "The user canceled the sign-in flow."{
                 Utilities.shared.showAlert(title: "Oops!", alertMessage: "The user cancelled the sign-in flow.", alertButton: "Okay", controller: self)
