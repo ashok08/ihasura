@@ -10,6 +10,7 @@
 		4118D8BA2685A377006C5C4A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118D8B92685A377006C5C4A /* Utilities.swift */; };
 		4118D8BC2685A566006C5C4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4118D8BB2685A566006C5C4A /* GoogleService-Info.plist */; };
 		4118D8BE26870F57006C5C4A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118D8BD26870F57006C5C4A /* APIRequest.swift */; };
+		411EA6BC2696C8E900BBEB55 /* InsertPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EA6BB2696C8E900BBEB55 /* InsertPostViewController.swift */; };
 		414B53DB268C41F9008D95D1 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B53DA268C41F8008D95D1 /* Query.swift */; };
 		414B53DD268C426C008D95D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B53DC268C426C008D95D1 /* Model.swift */; };
 		4181AE22267641D00095D52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4181AE21267641D00095D52F /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		4118D8B92685A377006C5C4A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4118D8BB2685A566006C5C4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4118D8BD26870F57006C5C4A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		411EA6BB2696C8E900BBEB55 /* InsertPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertPostViewController.swift; sourceTree = "<group>"; };
 		414B53DA268C41F8008D95D1 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		414B53DC268C426C008D95D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4181AE1E267641D00095D52F /* ihasura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ihasura.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 				4181AE21267641D00095D52F /* AppDelegate.swift */,
 				4181AE23267641D00095D52F /* SceneDelegate.swift */,
 				4181AE25267641D00095D52F /* ViewController.swift */,
+				411EA6BB2696C8E900BBEB55 /* InsertPostViewController.swift */,
 				4181AE27267641D00095D52F /* Main.storyboard */,
 				4118D8BB2685A566006C5C4A /* GoogleService-Info.plist */,
 				4181AE2A267641D30095D52F /* Assets.xcassets */,
@@ -242,6 +245,7 @@
 				414B53DD268C426C008D95D1 /* Model.swift in Sources */,
 				4181AE26267641D00095D52F /* ViewController.swift in Sources */,
 				4181AE22267641D00095D52F /* AppDelegate.swift in Sources */,
+				411EA6BC2696C8E900BBEB55 /* InsertPostViewController.swift in Sources */,
 				4118D8BA2685A377006C5C4A /* Utilities.swift in Sources */,
 				4118D8BE26870F57006C5C4A /* APIRequest.swift in Sources */,
 				414B53DB268C41F9008D95D1 /* Query.swift in Sources */,

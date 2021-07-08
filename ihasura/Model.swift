@@ -8,9 +8,9 @@
 import Foundation
 import ObjectMapper
 
-class Social: NSObject, Mappable {
+class Users: NSObject, Mappable {
     
-    var data = SocialMedia()
+    var data = Datas()
     
     override init() { }
     
@@ -24,10 +24,12 @@ class Social: NSObject, Mappable {
     }
 }
 
-class SocialMedia: NSObject, Mappable {
+class Datas: NSObject, Mappable {
     
-    var socialMedia = [SocialMediaDetails]()
-    
+    var insertdata = AffectedRows()
+    var checkdata = [UserDetails]()
+    var insertPosts = AffectedRows()
+
     override init() { }
     
     required convenience init?(map: Map) {
@@ -36,13 +38,16 @@ class SocialMedia: NSObject, Mappable {
     }
     
     func mapping(map: Map) {
-        socialMedia <- map["social_media"]
+        insertdata <- map["insert_users"]
+        checkdata <- map["users"]
+        insertPosts <- map["insert_posts"]
+
     }
 }
 
-class SocialMediaDetails: NSObject, Mappable {
+class AffectedRows: NSObject, Mappable {
     
-    var appName = String()
+    var affectedRows = 0
     
     override init() { }
     
@@ -52,6 +57,23 @@ class SocialMediaDetails: NSObject, Mappable {
     }
     
     func mapping(map: Map) {
-        appName <- map["app_name"]
+        affectedRows <- map["affected_rows"]
     }
 }
+
+class UserDetails: NSObject, Mappable {
+    
+    var name = String()
+    
+    override init() { }
+    
+    required convenience init?(map: Map) {
+        self.init()
+        mapping(map: map)
+    }
+    
+    func mapping(map: Map) {
+        name <- map["name"]
+    }
+}
+
